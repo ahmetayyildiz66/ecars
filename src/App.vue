@@ -1,10 +1,14 @@
 <template>
   <div>
     <EcTopbar />
+    <div class="border-b">
+      <EcHeader />
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import EcHeader from './layouts/EcHeader.vue';
 import EcTopbar from './layouts/EcTopbar.vue';
 
 </script>

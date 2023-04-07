@@ -25,6 +25,9 @@ export default {
         },
         gray: {
           '350': '#C0BFBE'
+        },
+        green: {
+          '750': '#3C7D46'
         }
       }
     },
