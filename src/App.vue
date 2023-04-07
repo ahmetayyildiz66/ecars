@@ -7,7 +7,6 @@
 
     <EcHero />
     <EcBenefitsList />
-  
   </div>
 </template>
 
