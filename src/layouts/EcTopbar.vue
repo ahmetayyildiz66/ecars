@@ -11,12 +11,12 @@
         <IconInstagram class="hidden lg:flex" />
 
         <div class="flex items-center space-x-[6px]">
-          <IconWhatsapp />
+          <IconWhatsapp :width="16" :height="16" :fill="'#C0BFBE'" />
           <span>+971 55 811 9024</span>
         </div>
         
         <div class="hidden lg:flex items-center space-x-[6px] ">
-          <IconMail />
+          <IconMail :width="16" :height="16" :fill="'#C0BFBE'" />
           <span>request@example.com</span>
         </div>
 

@@ -4,12 +4,16 @@
     <div class="border-b">
       <EcHeader />
     </div>
+
+    <EcHero />
+  
   </div>
 </template>
 
 <script setup lang="ts">
 import EcHeader from './layouts/EcHeader.vue';
 import EcTopbar from './layouts/EcTopbar.vue';
+import EcHero from './components/EcHero.vue';
 
 </script>
 
