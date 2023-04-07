@@ -6,7 +6,12 @@
     </div>
 
     <EcHero />
-    <EcBenefitsList />
+
+    <div class="border-b pb-8">
+      <EcBenefitsList class="shrink-0" />
+    </div>
+
+    <SpecialOffers />
   </div>
 </template>
 
@@ -15,6 +20,7 @@ import EcHeader from './layouts/EcHeader.vue';
 import EcTopbar from './layouts/EcTopbar.vue';
 import EcHero from './components/EcHero.vue';
 import EcBenefitsList from './components/EcBenefitsList.vue';
+import SpecialOffers from './components/SpecialOffers.vue';
 
 </script>
 
