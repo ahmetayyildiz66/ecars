@@ -6,6 +6,7 @@
     </div>
 
     <EcHero />
+    <EcBenefitsList />
   
   </div>
 </template>
@@ -14,6 +15,7 @@
 import EcHeader from './layouts/EcHeader.vue';
 import EcTopbar from './layouts/EcTopbar.vue';
 import EcHero from './components/EcHero.vue';
+import EcBenefitsList from './components/EcBenefitsList.vue';
 
 </script>
 

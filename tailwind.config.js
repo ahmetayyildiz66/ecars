@@ -29,6 +29,9 @@ export default {
         },
         green: {
           '750': '#3C7D46'
+        },
+        brown: {
+          '550': '#E49A49'
         }
       }
     },
