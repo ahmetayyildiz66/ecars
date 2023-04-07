@@ -7,7 +7,7 @@
       </div>
 
       <div class="flex ml-auto space-x-6">
-        <div class="sm:hidden md:flex items-center space-x-[6px]">
+        <div class="hidden md:flex items-center space-x-[6px]">
           <IconLocation />
           <span>Ship to: </span>
           <IconCanada />
@@ -17,7 +17,7 @@
           </p>
         </div>
 
-        <div class="sm:hidden md:flex items-center space-x-[6px]">
+        <div class="hidden md:flex items-center space-x-[6px]">
           <span>Currency:</span>
           <p class="text-white flex items-center">
             <span>USD</span>

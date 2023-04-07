@@ -1,5 +1,5 @@
 <template>
-  <button class="bg-green-750 text-white py-[6px] px-3 rounded-lg text-sm font-semibold inline-block" :class="[{'w-full': isFullWidth}]">
+  <button class="bg-green-750 text-white py-[8px] px-3 rounded-lg text-sm font-semibold inline-block" :class="[{'w-full': isFullWidth}]">
     Get a quote
   </button>
 </template>
