@@ -16,7 +16,7 @@
     </div>
 
     <div class="ml-auto flex items-center space-x-4 md:space-x-[22px]">
-      <EcIconButton>
+      <EcIconButton class="flex">
         <IconSearch />
       </EcIconButton>
 
