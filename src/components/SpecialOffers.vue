@@ -11,7 +11,7 @@
     </div>
 
     <div
-      class="flex space-x-4 overflow-hidden pb-2 mb-5"
+      class="flex lg:container space-x-4 overflow-hidden pb-2 mb-5"
       :class="[{ 'ml-4': index === 0 }]"
     >
       <EcOfferCard
