@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-gray-50 py-8">
+  <section class="bg-gray-50 py-8 md:py-10 lg:py-24">
     <div class="container">
       <h4 class="text-3xl font-semibold mb-6">Browse by brand</h4>
 
-      <div class="grid gap-4 grid-cols-2">
+      <div class="grid gap-4 grid-cols-fluid">
         <EcBrandCard
           v-for="brand in brands"
           :key="brand.name"

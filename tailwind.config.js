@@ -36,6 +36,9 @@ export default {
         brown: {
           '550': '#E49A49'
         }
+      },
+      gridTemplateColumns: {
+        'fluid': 'repeat(auto-fit, minmax(163px, 1fr))'
       }
     },
   },
