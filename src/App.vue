@@ -16,6 +16,10 @@
     <EcBrowseBrand />
 
     <EcInquiry />
+
+    <div class="border-b">
+      <EcHowWorks />
+    </div>
   </div>
 </template>
 
@@ -27,6 +31,7 @@ import EcBenefitsList from './components/EcBenefitsList.vue';
 import SpecialOffers from './components/SpecialOffers.vue';
 import EcBrowseBrand from './components/EcBrowseBrand.vue';
 import EcInquiry from './components/EcInquiry.vue';
+import EcHowWorks from './components/EcHowWorks.vue';
 
 </script>
 
