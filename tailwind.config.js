@@ -21,7 +21,7 @@ export default {
     extend: {
       colors: {
         black: {
-          '50': '#2C2A26'
+          '50': '#2C2A26',
         },
         gray: {
           '50': '#F6F5F4',

@@ -1,6 +1,6 @@
 <template>
   <button
-    class="bg-green-750 text-white py-[8px] px-3 rounded-lg text-sm font-semibold inline-block"
+    class="bg-green-750 text-white py-[8px] px-3 md:px-6 md:py-3 rounded-lg text-sm font-semibold inline-block"
     :class="[
       { 'w-full !py-[14px] text-base': isFullWidth },
       { '!py-[14px] px-[29px]': isBig },

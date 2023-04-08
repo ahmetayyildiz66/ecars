@@ -14,6 +14,8 @@
     <SpecialOffers />
 
     <EcBrowseBrand />
+
+    <EcInquiry />
   </div>
 </template>
 
@@ -24,6 +26,7 @@ import EcHero from './components/EcHero.vue';
 import EcBenefitsList from './components/EcBenefitsList.vue';
 import SpecialOffers from './components/SpecialOffers.vue';
 import EcBrowseBrand from './components/EcBrowseBrand.vue';
+import EcInquiry from './components/EcInquiry.vue';
 
 </script>
 
