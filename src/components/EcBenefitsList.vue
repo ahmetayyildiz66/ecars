@@ -3,7 +3,7 @@
     class="container flex flex-col space-y-8 lg:space-y-0 mt-8 lg:flex-row lg:space-x-10 lg:mt-0 lg:-translate-y-[84px] lg:rounded-2xl lg:bg-white lg:shadow-2xl lg:px-10 lg:py-10 lg:shadow-gray-350"
   >
     <div
-      class="flex items-center justify-between md:justify-normal text-sm space-x-4"
+      class="flex items-center justify-normal text-sm space-x-4"
     >
       <EcFeatureButton>
         <IconBriefcase />
@@ -21,7 +21,7 @@
     </div>
 
     <div
-      class="flex items-center justify-between md:justify-normal text-sm space-x-4"
+      class="flex items-center justify-normal text-sm space-x-4"
     >
       <EcFeatureButton>
         <IconPayment />
@@ -39,7 +39,7 @@
     </div>
 
     <div
-      class="flex items-center justify-between md:justify-normal text-sm space-x-4"
+      class="flex items-center justify-normal text-sm space-x-4"
     >
       <EcFeatureButton>
         <IconReview />

@@ -1,41 +1,48 @@
 <template>
   <section class="pt-8 relative">
-    <h4 class="container text-3xl font-semibold mb-6">Special offers</h4>
+    <div class="container flex items-center justify-between">
+      <h4 class="text-3xl font-semibold mb-6">Special offers</h4>
 
-    <div class="flex space-x-4 overflow-hidden pb-2 mb-5" :class="[{'ml-4': index === 0}]">
+      <div class="hidden pb-4 md:flex items-center">
+        <EcSlider @prev-slide="prevSlide" @next-slide="nextSlide" />
+
+        <EcAllCars class="ml-6" />
+      </div>
+    </div>
+
+    <div
+      class="flex space-x-4 overflow-hidden pb-2 mb-5"
+      :class="[{ 'ml-4': index === 0 }]"
+    >
       <EcOfferCard
         v-for="(car, i) in cars"
         :key="car.src"
         :src-url="car.src"
         :style="{ transform: `translateX(-${index * 100}%)` }"
         class="transition-all duration-300 ease-in-out"
-        :class="{'opacity-25': index !== i}"
+        :class="[{ 'opacity-25': isBlurry(i) }]"
       />
     </div>
 
-    <div class="container mb-20 pb-4 flex items-center justify-between">
-      <p class="flex items-center space-x-4">
-        <button @click="prevSlide">
-          <IconArrowLeft />
-        </button>
-        <button @click="nextSlide">
-          <IconArrowRight />
-        </button>
-      </p>
-      <p class="text-green-750 font-semibold flex items-center space-x-1">
-        <span>See all cars</span>
-        <IconExpand />
-      </p>
+    <div class="container md:hidden mb-20 pb-4 flex items-center justify-between">
+      <EcSlider @prev-slide="prevSlide" @next-slide="nextSlide" />
+
+      <EcAllCars />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
-import EcOfferCard from "./EcOfferCard.vue";
-import IconArrowRight from "./icons/IconArrowRight.vue";
-import IconArrowLeft from "./icons/IconArrowLeft.vue";
-import IconExpand from "./icons/IconExpand.vue";
+// ref
 import { ref } from "vue";
+
+// composables
+import { useIsMobile } from "../composables/useMediaQuery";
+
+// icons
+import EcOfferCard from "./EcOfferCard.vue";
+import EcAllCars from "./EcAllCars.vue";
+import EcSlider from "./EcSlider.vue";
 
 const cars = [
   { src: "genesis.png" },
@@ -50,14 +57,23 @@ const index = ref(0);
 const prevSlide = () => {
   index.value--;
   if (index.value < 0) {
-    index.value = cars.length -1
+    index.value = cars.length - 1;
   }
 };
 
 const nextSlide = () => {
-  index.value++
+  index.value++;
   if (index.value >= cars.length) {
-    index.value = 0
+    index.value = 0;
   }
+};
+
+const isBlurry = (i: number) => {
+  if (useIsMobile.value === "mobile") {
+    return i !== index.value;
+  } else if (useIsMobile.value === "tablet") {
+    return i !== index.value && index.value + 1 !== i;
+  }
+  return (i + 1) % 5 === 0;
 };
 </script>
