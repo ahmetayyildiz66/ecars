@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-8 relative">
+  <section class="pt-8 pb-8 relative">
     <div class="container flex items-center justify-between">
       <h4 class="text-3xl font-semibold mb-6">Special offers</h4>
 
@@ -11,7 +11,7 @@
     </div>
 
     <div
-      class="flex lg:container space-x-4 overflow-hidden pb-2 mb-5"
+      class="flex lg:container space-x-4 overflow-hidden pb-2 mb-5 md:mb-0"
       :class="[{ 'ml-4': index === 0 }]"
     >
       <EcOfferCard
@@ -24,7 +24,7 @@
       />
     </div>
 
-    <div class="container md:hidden mb-20 pb-4 flex items-center justify-between">
+    <div class="container md:hidden flex items-center justify-between">
       <EcSlider @prev-slide="prevSlide" @next-slide="nextSlide" />
 
       <EcAllCars />

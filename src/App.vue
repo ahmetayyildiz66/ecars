@@ -12,6 +12,8 @@
     </div>
 
     <SpecialOffers />
+
+    <EcBrowseBrand />
   </div>
 </template>
 
@@ -21,6 +23,7 @@ import EcTopbar from './layouts/EcTopbar.vue';
 import EcHero from './components/EcHero.vue';
 import EcBenefitsList from './components/EcBenefitsList.vue';
 import SpecialOffers from './components/SpecialOffers.vue';
+import EcBrowseBrand from './components/EcBrowseBrand.vue';
 
 </script>
 
@@ -29,5 +32,6 @@ import SpecialOffers from './components/SpecialOffers.vue';
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: '#F6F5F4';
 }
 </style>

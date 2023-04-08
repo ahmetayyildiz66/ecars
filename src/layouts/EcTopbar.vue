@@ -29,7 +29,7 @@
           <IconCanada />
           <p class="text-white flex items-center">
             <span>Canada</span>
-            <IconArrowDown />
+            <IconArrowDown :height="12" :width="12" :fill="'white'" />
           </p>
         </div>
 
@@ -37,7 +37,7 @@
           <span>Currency:</span>
           <p class="text-white flex items-center">
             <span>USD</span>
-            <IconArrowDown />
+            <IconArrowDown :height="12" :width="12" :fill="'white'" />
           </p>
         </div>
 
