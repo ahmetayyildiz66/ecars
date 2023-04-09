@@ -1,5 +1,5 @@
 <template>
-  <section class="py-8 px-4 md:py-10 md:px-8 lg:py-24 lg:px-[316px]  bg-black-50 text-white md:flex md:justify-between md:space-x-8 md:items-center">
+  <section class="py-8 px-4 md:py-10 md:px-8 lg:py-24 lg:px-[316px]  bg-black-50 text-white md:flex md:justify-between md:space-x-8 md:items-center lg:justify-center">
     <div class="max-w-[534px]">
       <h4 class="font-semibold text-[19px] mb-4">
         Send an inquiry now and get the best offers suitable for your requirements
