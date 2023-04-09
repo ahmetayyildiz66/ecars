@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex justify-center">
     <img src="../assets/heroMobile.png" alt="Hero Mobile" class="md:hidden w-full h-auto object-cover">
-    <img src="../assets/heroTablet.png" alt="Hero Mobile" class="hidden md:flex w-full h-auto object-cover">
+    <img src="../assets/heroTablet.png" alt="Hero Tablet" class="hidden md:flex w-full h-auto object-fit max-h-[600px]">
     
     <div class="md:hidden lg:flex lg:flex-col container absolute bottom-8 lg:top-[120px]">
       <h1 class="font-semibold text-[42px] leading-[48px] lg:max-w-[600px] lg:text-[60px] lg:leading-[69px]">Car import services with delivery to your doorstep.</h1>
