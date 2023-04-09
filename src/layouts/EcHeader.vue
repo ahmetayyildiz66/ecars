@@ -28,7 +28,7 @@
         <IconAccount />
       </EcIconButton>
 
-      <EcButton />
+      <EcButton title="Get a quote" />
     </div>
 
   </header>

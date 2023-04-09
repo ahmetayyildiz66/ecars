@@ -58,6 +58,8 @@
     <EcReviews />
 
     <EcBlog />
+
+    <EcContact />
   </div>
 </template>
 
@@ -79,6 +81,7 @@ import EcAllCars from "./components/EcAllCars.vue";
 import EcOfferCard from "./components/EcOfferCard.vue";
 import EcReviews from "./components/EcReviews.vue";
 import EcBlog from "./components/EcBlog.vue";
+import EcContact from "./components/EcContact.vue";
 
 const isBlurry = (i: number) => {
   if (useIsMobile.value === "mobile") {
@@ -116,6 +119,7 @@ const nextSlide = () => {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;600;700&display=swap');
 
 body {
   font-family: "Inter", sans-serif;

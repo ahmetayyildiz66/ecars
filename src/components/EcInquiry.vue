@@ -11,7 +11,7 @@
       </p>
     </div>
 
-    <EcButton class="sm:mt-6 md:mt-0 ml-auto" :is-full-width="isMobile" />
+    <EcButton class="sm:mt-6 md:mt-0 ml-auto" :is-full-width="isMobile" title="Get a quote" />
   </section>
 </template>
 

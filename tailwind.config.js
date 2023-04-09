@@ -5,6 +5,10 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'inter': ['"Inter", sans-serif'],
+      'inter-tight': ['"Inter Tight", sans-serif']
+    },
     screens: {
       'sm': '375px',
       'md': '768px',

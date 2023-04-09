@@ -6,7 +6,7 @@
     <div class="md:hidden lg:flex lg:flex-col container absolute bottom-8 lg:top-[120px]">
       <h1 class="font-semibold text-[42px] leading-[48px] lg:max-w-[600px] lg:text-[60px] lg:leading-[69px]">Car import services with delivery to your doorstep.</h1>
       <div class="lg:flex lg:space-x-8 lg:mt-8">
-        <EcButton class="mt-6 lg:mt-0" :is-full-width="isMobile" :is-big="true" />
+        <EcButton class="mt-6 lg:mt-0" :is-full-width="isMobile" :is-big="true" title="Get a quote" />
         
         <div class="mt-6 md:mt-0 font-semibold flex lg:space-x-8 items-center justify-between text-sm">
           <div class="flex items-center space-x-1 lg:space-x-[6px]">
