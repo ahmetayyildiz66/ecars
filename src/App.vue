@@ -56,6 +56,8 @@
     <EcWhyUs />
 
     <EcReviews />
+
+    <EcBlog />
   </div>
 </template>
 
@@ -76,6 +78,7 @@ import EcSlider from "./components/EcSlider.vue";
 import EcAllCars from "./components/EcAllCars.vue";
 import EcOfferCard from "./components/EcOfferCard.vue";
 import EcReviews from "./components/EcReviews.vue";
+import EcBlog from "./components/EcBlog.vue";
 
 const isBlurry = (i: number) => {
   if (useIsMobile.value === "mobile") {

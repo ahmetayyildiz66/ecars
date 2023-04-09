@@ -36,6 +36,13 @@ export default {
         },
         brown: {
           '550': '#E49A49'
+        },
+        blue: {
+          '450': '#0394FC'
+        },
+        orange: {
+          '100': '#FFF1E8',
+          '450': '#DD7437'
         }
       },
       gridTemplateColumns: {
