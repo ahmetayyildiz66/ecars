@@ -2,24 +2,36 @@
   <div class="bg-black-50">
     <div class="container h-9 flex items-center text-gray-350 text-[13px]">
       <div class="flex items-center space-x-[6px] lg:space-x-4">
-        <IconFacebook class="hidden lg:flex" />
-        
-        <IconTwitter class="hidden lg:flex" />
-        
-        <IconYoutube class="hidden lg:flex" />
-        
-        <IconInstagram class="hidden lg:flex" />
+
+        <IconFacebook
+          class="hidden lg:flex"
+          :width="16"
+          :height="16"
+          :opacity="0.7"
+          fill="#fff"
+        />
+
+        <IconTwitter
+          class="hidden lg:flex"
+          :width="16"
+          :height="16"
+          :opacity="0.7"
+          fill="#fff"
+        />
+
+        <IconYoutube class="hidden lg:flex" :width="16" fill="#fff" :height="16" :opacity="0.7" />
+
+        <IconInstagram class="hidden lg:flex" :width="16" fill="#fff" :height="16" :opacity="0.7" />
 
         <div class="flex items-center space-x-[6px]">
           <IconWhatsapp :width="16" :height="16" :fill="'#C0BFBE'" />
           <span>+971 55 811 9024</span>
         </div>
-        
-        <div class="hidden lg:flex items-center space-x-[6px] ">
+
+        <div class="hidden lg:flex items-center space-x-[6px]">
           <IconMail :width="16" :height="16" :fill="'#C0BFBE'" />
           <span>request@example.com</span>
         </div>
-
       </div>
 
       <div class="flex ml-auto space-x-6">

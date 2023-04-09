@@ -60,6 +60,8 @@
     <EcBlog />
 
     <EcContact />
+
+    <EcFooter />
   </div>
 </template>
 
@@ -82,6 +84,7 @@ import EcOfferCard from "./components/EcOfferCard.vue";
 import EcReviews from "./components/EcReviews.vue";
 import EcBlog from "./components/EcBlog.vue";
 import EcContact from "./components/EcContact.vue";
+import EcFooter from "./layouts/EcFooter.vue";
 
 const isBlurry = (i: number) => {
   if (useIsMobile.value === "mobile") {
