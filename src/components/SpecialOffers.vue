@@ -47,7 +47,7 @@ import EcSlider from "./EcSlider.vue";
 const cars = [
   { src: "genesis.png" },
   { src: "cruiser.png" },
-  { src: "cruiser300.png" },
+  { src: "cruiser.png" },
   { src: "corolla.png" },
   { src: "prado.png" },
 ];
