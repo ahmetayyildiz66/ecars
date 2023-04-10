@@ -1,7 +1,7 @@
 <template>
-  <header class="container h-[52px] md:h-[60px] flex items-center">
+  <header class="container h-[52px] md:h-[60px] flex items-center relative">
     <div class="flex items-center space-x-4 lg:space-x-0">
-      <button class="w-8 h-8 flex items-center justify-center lg:hidden">
+      <button class="w-8 h-8 flex items-center justify-center lg:hidden" @click="useToggleMenu">
         <IconHamburger />
       </button>
 
@@ -35,6 +35,7 @@
 </template>
 
 <script lang="ts" setup>
+
 // components
 import EcButton from "../components/EcButton.vue";
 import EcIconButton from "../components/EcIconButton.vue";
@@ -45,4 +46,7 @@ import IconLogo from "../components/icons/IconLogo.vue";
 import IconSearch from "../components/icons/IconSearch.vue";
 import IconAccount from "../components/icons/IconAccount.vue";
 import IconHeart from "../components/icons/IconHeart.vue";
+
+import { useToggleMenu } from "../composables/useToggleMenu"
+
 </script>
