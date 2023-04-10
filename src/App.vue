@@ -64,16 +64,17 @@
     <EcFooter />
 
     <div v-if="isOpen">
-      <div class="z-10 fixed inset-0 transition-opacity">
+      <div class="z-10 fixed inset-0 transition-opacity lg:hidden">
         <div
           tabindex="-1"
           class="absolute inset-0 bg-black-50 opacity-50"
         ></div>
       </div>
 
-      <div class="text-gray-950">
+      <div class="text-gray-950 lg:hidden">
         <div
-          class="z-10 fixed inset-y-0 left-0 w-[90%] bg-white transition-transform overflow-y-auto pt-11 px-4 pb-4 flex flex-col"
+          class="z-10 fixed inset-y-0 left-0 w-[335px] md:w-[360px] bg-white transition-transform overflow-y-auto pt-11 md:pt-[50px] px-4 pb-4 md:pb-8 md:px-8 flex flex-col"
+          v-on-click-outside="useToggleMenu"
         >
           <div>
             <div class="flex items-center space-x-4 mb-4">
@@ -82,7 +83,7 @@
               </button>
               <IconLogo />
             </div>
-            <div class="pt-4">
+            <div class="pt-4 md:pt-8">
               <ul>
                 <li class="py-3">All Cars</li>
                 <li class="py-3">About Us</li>
@@ -131,29 +132,13 @@
             </div>
 
             <div class="flex space-x-5 mt-6">
-              <IconFacebook
-                :width="20"
-                :height="20"
-                fill="#767676"
-              />
+              <IconFacebook :width="20" :height="20" fill="#767676" />
 
-              <IconTwitter
-                :width="20"
-                :height="20"
-                fill="#767676"
-              />
+              <IconTwitter :width="20" :height="20" fill="#767676" />
 
-              <IconYoutube
-                :width="20"
-                fill="#767676"
-                :height="20"
-              />
+              <IconYoutube :width="20" fill="#767676" :height="20" />
 
-              <IconInstagram
-                :width="20"
-                fill="#767676"
-                :height="20"
-              />
+              <IconInstagram :width="20" fill="#767676" :height="20" />
             </div>
           </div>
         </div>
@@ -164,6 +149,7 @@
 
 <script setup lang="ts">
 import { ref, watch } from "vue";
+import { vOnClickOutside } from "@vueuse/components";
 
 import { useIsMobile } from "./composables/useMediaQuery";
 import { isOpen, useToggleMenu } from "./composables/useToggleMenu";
@@ -205,6 +191,7 @@ const isBlurry = (i: number) => {
   }
   return (i + 1) % 5 === 0;
 };
+
 
 const cars = [
   { src: "genesis.png" },
