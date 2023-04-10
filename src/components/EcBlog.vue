@@ -64,7 +64,6 @@ const blogArticles: Blog[] = [
 ];
 
 const blogs = computed(() => {
-  console.log('useIsMobile: ', useIsMobile.value)
   if (useIsMobile.value === 'tablet') {
     return blogArticles.slice(0, 2)
   }

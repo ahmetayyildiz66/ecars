@@ -73,7 +73,7 @@
 
       <div class="text-gray-950 lg:hidden">
         <div
-          class="z-10 fixed inset-y-0 left-0 w-[335px] md:w-[360px] bg-white transition-transform overflow-y-auto pt-11 md:pt-[50px] px-4 pb-4 md:pb-8 md:px-8 flex flex-col"
+          class="z-10 fixed inset-y-0 left-0 w-[335px] md:w-[360px] transform transition-transform duration-300 ease-in bg-white overflow-y-auto pt-11 md:pt-[50px] px-4 pb-4 md:pb-8 md:px-8 flex flex-col"
           v-on-click-outside="useToggleMenu"
         >
           <div>
@@ -144,6 +144,8 @@
         </div>
       </div>
     </div>
+
+    
   </div>
 </template>
 
@@ -182,6 +184,7 @@ import IconFacebook from "./components/icons/IconFacebook.vue";
 import IconInstagram from "./components/icons/IconInstagram.vue";
 import IconYoutube from "./components/icons/IconYoutube.vue";
 import IconTwitter from "./components/icons/IconTwitter.vue";
+import IconSearch from "./components/icons/IconSearch.vue";
 
 const isBlurry = (i: number) => {
   if (useIsMobile.value === "mobile") {
@@ -191,7 +194,6 @@ const isBlurry = (i: number) => {
   }
   return (i + 1) % 5 === 0;
 };
-
 
 const cars = [
   { src: "genesis.png" },
