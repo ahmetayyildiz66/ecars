@@ -8,12 +8,14 @@
         <IconHamburger />
       </button>
 
-      <IconLogo />
+      <router-link to="/">
+        <IconLogo />
+      </router-link>
 
       <div class="hidden lg:flex space-x-8 !ml-5 items-center">
         <router-link
           class="text-gray-900 font-semibold text-sm leading-6"
-          to="/"
+          to="/cars"
           >All Cars</router-link
         >
         <router-link
@@ -50,6 +52,8 @@
       <EcButton title="Get a quote" />
     </div>
 
+    <EcSidebar />
+
     <div v-if="isSearchOpen">
       <div class="z-10 fixed inset-0 transition-opacity">
         <div
@@ -77,7 +81,8 @@
 <script lang="ts" setup>
 // ref
 import { ref } from "vue";
-import { vOnClickOutside } from "@vueuse/components";
+
+import { useToggleMenu } from "../composables/useToggleMenu";
 
 
 // components
@@ -90,8 +95,7 @@ import IconLogo from "../components/icons/IconLogo.vue";
 import IconSearch from "../components/icons/IconSearch.vue";
 import IconAccount from "../components/icons/IconAccount.vue";
 import IconHeart from "../components/icons/IconHeart.vue";
-
-import { useToggleMenu } from "../composables/useToggleMenu";
+import EcSidebar from "./EcSidebar.vue";
 
 const isSearchOpen = ref(false);
 
