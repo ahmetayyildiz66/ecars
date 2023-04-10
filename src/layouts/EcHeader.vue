@@ -80,9 +80,9 @@
 
 <script lang="ts" setup>
 // ref
-import { ref } from "vue";
+import { ref, watch, watchEffect } from "vue";
 
-import { useToggleMenu } from "../composables/useToggleMenu";
+import { useToggleMenu, isOpen } from "../composables/useToggleMenu";
 
 
 // components
@@ -96,10 +96,17 @@ import IconSearch from "../components/icons/IconSearch.vue";
 import IconAccount from "../components/icons/IconAccount.vue";
 import IconHeart from "../components/icons/IconHeart.vue";
 import EcSidebar from "./EcSidebar.vue";
+import { useRoute } from "vue-router";
 
 const isSearchOpen = ref(false);
 
 const toggleSearchModal = () => {
   isSearchOpen.value = !isSearchOpen.value;
 };
+
+const route = useRoute()
+
+watch(route, () => {
+  isOpen.value = false
+})
 </script>

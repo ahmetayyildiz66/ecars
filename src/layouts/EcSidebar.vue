@@ -15,7 +15,7 @@
           <div>
             <div class="flex items-center space-x-4 mb-4">
               <button class="p-[6px]" @click="useToggleMenu">
-                <IconCross />
+                <IconCross :width="20" :height="20" fill="#1A1A1A"/>
               </button>
               <router-link to="/">
                 <IconLogo />
