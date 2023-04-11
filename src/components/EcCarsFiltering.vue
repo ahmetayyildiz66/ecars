@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-between">
-    <div class="w-[288px] hidden lg:flex mt-6">
-      filters miltersasdasdasdasdsad
+    <div class="w-[288px] hidden lg:flex mt-6 p-4 border rounded-lg">
+      <EcDropdown :options="makeOptions" label="Make" />
     </div>
 
     <div>
@@ -14,7 +14,7 @@
           <span>Sort by:</span>
           <button class="flex items-center">
             Newly added
-            <IconArrowDownFill />
+            <IconArrowDownFill :width="20" :height="20" fill="#1A1A1A" />
           </button>
         </p>
       </div>
@@ -38,7 +38,7 @@
       </div>
       <EcFilterSidebar class="lg:hidden" />
     </div>
-    
+
   </div>
 </template>
 
@@ -50,4 +50,24 @@ import EcCars from "./EcCars.vue";
 import IconArrowDownFill from "../components/icons/IconArrowDownFill.vue";
 import IconCross from "./icons/IconCross.vue";
 import IconFilter from "./icons/IconFilter.vue";
+import EcDropdown from "./EcDropdown.vue";
+
+const makeOptions = [
+  {
+    id: "all",
+    text: "All",
+  },
+  {
+    id: "toyota",
+    text: "Toyota",
+  },
+  {
+    id: "bmw",
+    text: "BMW",
+  },
+  {
+    id: "mercedes",
+    text: "Mercedes-Benz",
+  },
+]
 </script>

@@ -8,16 +8,36 @@
       class="z-10 fixed inset-y-0 right-0 h-full w-[335px] bg-white p-4"
       v-on-click-outside="toggleSidebar"
     >
-      <p class="text-red-600">test</p>
+      <EcDropdown :options="makeOptions" label="Make" />
     </div>
   </aside>
 </template>
 
 <script lang="ts" setup>
 import { ref } from "vue";
+import EcDropdown from "./EcDropdown.vue";
 const isSidebarOpen = ref(false);
 
 const toggleSidebar = () => {
   isSidebarOpen.value = !isSidebarOpen.value;
 };
+
+const makeOptions = [
+  {
+    id: "all",
+    text: "All",
+  },
+  {
+    id: "toyota",
+    text: "Toyota",
+  },
+  {
+    id: "bmw",
+    text: "BMW",
+  },
+  {
+    id: "mercedes",
+    text: "Mercedes-Benz",
+  },
+]
 </script>
