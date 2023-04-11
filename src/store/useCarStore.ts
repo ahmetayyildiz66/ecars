@@ -137,10 +137,178 @@ export const useCarStore = defineStore('cars', {
           price: 45995,
           description: '2022 Land Cruiser, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
         },
+        {
+          id: 11,
+          make: 'BMW',
+          model: 'BMW 1 Series 120d M Sport',
+          km: 15328,
+          fuelType: 'Diesel',
+          city: 'Gulldford',
+          isNew: false,
+          imageUrl: 'bmw-1-118d.jpeg',
+          price: 29480,
+          description: 'BMW 1 Series 120d M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 12,
+          make: 'BMW',
+          model: 'BMW 1 Series 120d XDrive M Sport',
+          km: 32034,
+          fuelType: 'Diesel',
+          city: 'Manchester',
+          isNew: false,
+          imageUrl: 'bmw-1-120d-xdrive.jpeg',
+          price: 26000,
+          description: 'BMW 1 Series 120d XDrive M Sport panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 13,
+          make: 'BMW',
+          model: 'BMW 1 Series 120d M Sport',
+          km: 13254,
+          fuelType: 'Diesel',
+          city: 'Chelsea',
+          isNew: false,
+          imageUrl: 'bmw-1-120d.jpeg',
+          price: 25850,
+          description: 'BMW 1 Series 120d M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 14,
+          make: 'BMW',
+          model: 'BMW 1 Series M13i xDrive',
+          km: 12357,
+          fuelType: 'Gasoline',
+          city: 'Sheffield',
+          isNew: false,
+          imageUrl: 'bmw-m13i.jpeg',
+          price: 36500,
+          description: 'BMW 1 Series M13i xDrive, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 15,
+          make: 'BMW',
+          model: 'BMW 4 Series 420d xDrive M Sport Coupe',
+          km: 24001,
+          fuelType: 'Diesel',
+          city: 'Sheffield',
+          isNew: false,
+          imageUrl: 'bmw-4-420.jpeg',
+          price: 33000,
+          description: 'BMW 4 Series 420d xDrive M Sport Coupe, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 16,
+          make: 'BMW',
+          model: 'BMW 4 Series 420d M Sport Convertible',
+          km: 14261,
+          fuelType: 'Diesel',
+          city: 'Arsenal',
+          isNew: false,
+          imageUrl: 'bmw-4-convertible.jpeg',
+          price: 35500,
+          description: 'BMW 4 Series 420d M Sport Convertible, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 17,
+          make: 'BMW',
+          model: 'BMW i4 eDrive40 M Sport',
+          km: 13984,
+          fuelType: 'Electric',
+          city: 'Norwich',
+          isNew: false,
+          imageUrl: 'bmw-ei4.jpeg',
+          price: 52561,
+          description: 'BMW 4 Series 420d M Sport Convertible, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 18,
+          make: 'BMW',
+          model: 'BMW X3 Series M40i',
+          km: 21110,
+          fuelType: 'Gasoline',
+          city: 'Norwich',
+          isNew: false,
+          imageUrl: 'x3-m40i.jpeg',
+          price: 46000,
+          description: 'BMW X3 Series M40i, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 19,
+          make: 'BMW',
+          model: 'BMW X4 xDrive 40i xLine',
+          km: 13630,
+          fuelType: 'Gasoline',
+          city: 'Arsenal',
+          isNew: false,
+          imageUrl: 'x4-xdrive40i.jpeg',
+          price: 34156,
+          description: 'BMW X4 xDrive 40i xLine, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 20,
+          make: 'BMW',
+          model: 'BMW X5 xDrive45e M Sport',
+          km: 17852,
+          fuelType: 'Hybrid',
+          city: 'Stockholm',
+          isNew: false,
+          imageUrl: 'x5-xdrive45e.jpeg',
+          price: 64995,
+          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 20,
+          make: 'BMW',
+          model: 'BMW X5 xDrive45e M Sport',
+          km: 17852,
+          fuelType: 'Hybrid',
+          city: 'Stockholm',
+          isNew: false,
+          imageUrl: 'x5-xdrive45e.jpeg',
+          price: 64995,
+          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 21,
+          make: 'Mercedes-Benz',
+          model: 'Mercedes-Benz A 200 CDI',
+          km: 0,
+          fuelType: 'Diesel',
+          city: 'Malmo',
+          isNew: true,
+          imageUrl: 'merco-a200.jpeg',
+          price: 14999,
+          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 22,
+          make: 'Mercedes-Benz',
+          model: 'Mercedes-Benz AMG G 63',
+          km: 30000,
+          fuelType: 'Gasoline',
+          city: 'Lund',
+          isNew: false,
+          imageUrl: 'merco-g63-30thsnd.jpeg',
+          price: 240000,
+          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
+        {
+          id: 23,
+          make: 'Mercedes-Benz',
+          model: 'Mercedes-Benz AMG G 350',
+          km: 55000,
+          fuelType: 'Diesel',
+          city: 'Malmo',
+          isNew: false,
+          imageUrl: 'merco-g350-black.jpeg',
+          price: 150000,
+          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
+        },
       ] as Car[]
     }
   },
   getters: {
-    getCars: (state) => state.cars
+    getCars: (state) => state.cars,
   }
 })

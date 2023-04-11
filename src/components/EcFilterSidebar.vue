@@ -1,5 +1,5 @@
 <template>
-  <aside>
+  <aside v-if="isSidebarOpen">
     <div class="z-10 fixed inset-0 transition-opacity">
       <div tabindex="-1" class="absolute inset-0 bg-black-50 opacity-60"></div>
     </div>
@@ -16,6 +16,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import EcDropdown from "./EcDropdown.vue";
+
 const isSidebarOpen = ref(false);
 
 const toggleSidebar = () => {

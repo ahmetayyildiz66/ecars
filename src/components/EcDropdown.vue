@@ -1,7 +1,7 @@
 <template>
   <div class="space-y-2 w-full relative text-sm">
     <label tabindex="0" class="text-sm text-gray-950 font-semibold">{{ label }}</label>
-    <div v-on-click-outside="toggleDropdown">
+    <div v-on-click-outside="() => { isOpen = false }">
       <div
         class="border rounded-lg flex items-center px-3 py-[10px] hover:cursor-pointer"
         @click="toggleDropdown"
