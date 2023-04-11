@@ -1,6 +1,6 @@
 <template>
   <div class="text-sm space-y-4">
-    <EcCard v-for="car in store.cars" :key="car.id">
+    <EcCard v-for="car in store.getCars" :key="car.id">
       <template #header>
         <img
           :src="getImageUrl(car.imageUrl)"

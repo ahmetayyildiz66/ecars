@@ -80,7 +80,8 @@
 
 <script lang="ts" setup>
 // ref
-import { ref, watch, watchEffect } from "vue";
+import { ref, watch } from "vue";
+import { vOnClickOutside } from "@vueuse/components";
 
 import { useToggleMenu, isOpen } from "../composables/useToggleMenu";
 

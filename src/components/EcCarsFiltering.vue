@@ -20,7 +20,7 @@
       </div>
 
 
-      <EcFilterButton :is-big="true" class="mb-4 lg:hidden">
+      <EcFilterButton :is-big="true" class="mb-4 lg:hidden" @click="useToggleSidebar">
         <IconFilter />
         <span>Filters</span>
       </EcFilterButton>
@@ -43,6 +43,10 @@
 </template>
 
 <script lang="ts" setup>
+import { ref } from "vue";
+
+import { useToggleSidebar } from "../composables/useToggleSidebar";
+
 import EcFilterButton from "./EcFilterButton.vue";
 import EcFilterSidebar from "./EcFilterSidebar.vue";
 import EcCars from "./EcCars.vue";

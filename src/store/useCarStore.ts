@@ -258,18 +258,6 @@ export const useCarStore = defineStore('cars', {
           description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
         },
         {
-          id: 20,
-          make: 'BMW',
-          model: 'BMW X5 xDrive45e M Sport',
-          km: 17852,
-          fuelType: 'Hybrid',
-          city: 'Stockholm',
-          isNew: false,
-          imageUrl: 'x5-xdrive45e.jpeg',
-          price: 64995,
-          description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
-        },
-        {
           id: 21,
           make: 'Mercedes-Benz',
           model: 'Mercedes-Benz A 200 CDI',
@@ -305,10 +293,18 @@ export const useCarStore = defineStore('cars', {
           price: 150000,
           description: 'BMW X5 xDrive45e M Sport, panoramic roof, black interior, LED headlights and automatic gearbox. A brand new car with GCC specifications.'
         },
-      ] as Car[]
+      ] as Car[],
+      page: 1
     }
   },
   getters: {
-    getCars: (state) => state.cars,
+    getCars: (state) => state.cars.slice((state.page - 1) * 10, 10 * state.page),
+    getCarsLength: (state) => state.cars.length,
+    getPage: (state) => state.page
+  },
+  actions: {
+    setPage(page: number) {
+      this.page = page
+    }
   }
 })
