@@ -1,5 +1,5 @@
 <template>
-  <div class="py-6 text-sm space-y-4">
+  <div class="text-sm space-y-4">
     <EcCard v-for="car in store.cars" :key="car.id">
       <template #header>
         <img
@@ -58,19 +58,6 @@ import IconHeart from "./icons/IconHeart.vue";
 import { useCarStore } from "../store/useCarStore"
 
 const store = useCarStore()
-
-// interface Car {
-//   id: number,
-//   make: string,
-//   model: string,
-//   km: number,
-//   fuelType: string,
-//   city: string,
-//   isNew: boolean,
-//   imageUrl: string,
-//   price: number,
-//   description: string
-// }
 
 const getImageUrl = (imgUrl: string) => {
   return new URL(`../assets/${imgUrl}`, import.meta.url).href
