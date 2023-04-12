@@ -13,6 +13,14 @@ interface Car {
   description: string
 }
 
+interface Option {
+  type: string,
+  opt: {
+    id: string,
+    text: string
+  }
+}
+
 export const useCarStore = defineStore('cars', {
   state: () => {
     return {
@@ -573,7 +581,7 @@ export const useCarStore = defineStore('cars', {
         },
       ] as Car[],
       page: 1,
-      filters: [] as string[]
+      filters: [] as Option[]
     }
   },
   getters: {
@@ -589,8 +597,16 @@ export const useCarStore = defineStore('cars', {
     filterCars(make: string) {
       this.cars = this.originalCars.filter(car => car.make.toLowerCase().includes(make))
     },
-    setFilters(text: string) {
-      this.filters.push(text)
+    setFilters(opt: { type: string, opt: { id: string, text: string } }) {
+      console.log('opt: ', opt)
+      
+      const isMakeExist = this.filters.some(filter => filter.type === opt.type)
+      console.log('isMakeExist: ', isMakeExist)
+      if (isMakeExist) {
+        this.filters = this.filters.filter(filt => filt.type !== opt.type)
+      }
+      this.filters.push(opt)
+      console.log('filters: ', this.filters)
     }
   }
 })

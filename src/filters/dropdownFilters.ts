@@ -10,6 +10,7 @@ export const dropdownFilters =
     {
       id: "toyota",
       text: "Toyota",
+      type: 'make',
       models: {
         label: 'Model',
         options: [

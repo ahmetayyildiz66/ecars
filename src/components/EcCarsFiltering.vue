@@ -27,8 +27,8 @@
 
 
       <div class="flex space-x-1 space-y-1">
-        <EcFilterButton v-for="filter in store.getFilters" :key="filter">
-          <span>{{ filter }}</span>
+        <EcFilterButton v-for="filter in store.getFilters" :key="filter.opt.id">
+          <span>{{ filter.opt.text }}</span>
           <IconCross :width="16" :height="16" fill="#A3A3A3" />
         </EcFilterButton>
       </div>

@@ -12,14 +12,14 @@
         :options="dropdownFilters.options"
         :label="dropdownFilters.label"
         :isMain="dropdownFilters.isMain"
-        @makeOption="selectedMakeOption"
+        @makeOption="selectedMakeOption($event, 'make')"
       />
 
       <EcDropdown
         v-if="models.length"
         :options="models"
         label="Model"
-        @makeOption="selectedMakeOption"
+        @makeOption="selectedMakeOption($event, 'model')"
       />
     </div>
   </aside>
@@ -43,16 +43,19 @@ const models = ref<ModelOption[]>([]);
 
 const store = useCarStore();
 
-const selectedMakeOption = (opt: ModelOption) => {
+const selectedMakeOption = (opt: ModelOption, type: string) => {
   store.filterCars(opt.id);
-  const makeOptions = dropdownFilters.options.find(
+  const selectedOptions = dropdownFilters.options.find(
     (option) => option.id === opt.id
   );
-  if (makeOptions?.models) {
-    models.value = makeOptions.models.options;
+
+  if (selectedOptions?.models) {
+    models.value = selectedOptions.models.options;
   }
 
-  store.setFilters(opt.text);
+  const filterSet: { type: string; opt: ModelOption } = { type, opt };
+
+  store.setFilters(filterSet);
 };
 
 watch(isOpen, (val) => {
