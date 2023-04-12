@@ -27,8 +27,8 @@
 
 
       <div class="flex space-x-1 space-y-1">
-        <EcFilterButton>
-          <span>Toyota</span>
+        <EcFilterButton v-for="filter in store.getFilters" :key="filter">
+          <span>{{ filter }}</span>
           <IconCross :width="16" :height="16" fill="#A3A3A3" />
         </EcFilterButton>
       </div>
@@ -43,9 +43,9 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from "vue";
-
 import { useToggleSidebar } from "../composables/useToggleSidebar";
+
+import { useCarStore } from "../store/useCarStore";
 
 import EcFilterButton from "./EcFilterButton.vue";
 import EcFilterSidebar from "./EcFilterSidebar.vue";
@@ -55,6 +55,8 @@ import IconArrowDownFill from "../components/icons/IconArrowDownFill.vue";
 import IconCross from "./icons/IconCross.vue";
 import IconFilter from "./icons/IconFilter.vue";
 import EcDropdown from "./EcDropdown.vue";
+
+const store = useCarStore()
 
 const makeOptions = [
   {
