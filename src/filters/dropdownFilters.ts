@@ -60,11 +60,11 @@ export const dropdownFilters =
             text: 'All'
           },
           {
-            id: '1-series',
+            id: '1 series',
             text: '1 Series'
           },
           {
-            id: '4-series',
+            id: '4 series',
             text: '4 Series'
           },
           {

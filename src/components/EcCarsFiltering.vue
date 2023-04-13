@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between">
-    <div class="w-[288px] hidden lg:flex mt-6 p-4 border rounded-lg">
+    <div class="w-[288px] hidden lg:inline-block mt-6 p-4 border rounded-lg">
       <EcDropdown :options="makeOptions" label="Make" />
     </div>
 
@@ -26,7 +26,7 @@
       </EcFilterButton>
 
 
-      <div class="flex space-x-1 space-y-1">
+      <div class="flex space-x-1 ">
         <EcFilterButton v-for="filter in store.getFilters" :key="filter.opt.id">
           <span>{{ filter.opt.text }}</span>
           <IconCross :width="16" :height="16" fill="#A3A3A3" />
